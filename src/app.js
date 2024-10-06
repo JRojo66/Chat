@@ -14,7 +14,7 @@ import { initPassport } from "./config/passport.config.js";
 import cookieParser from "cookie-parser";
 import { config } from "./config/config.js";
 import { chatService } from "./services/chatService.js";
-import { errorHandler } from "./middleware/Errorhandler.js";
+import { errorHandler } from "./middleware/errorHandler.js";
 import cron from 'node-cron';
 
 const PORT = config.PORT;

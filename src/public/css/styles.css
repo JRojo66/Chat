@@ -1,0 +1,174 @@
+.background-class {
+  background-image: url("https://images.unsplash.com/photo-1726165534077-23c397b32d46?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Para que ocupe toda la pantalla */
+  text-align: center;
+}
+
+.name{
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.login{
+  width: 20%;
+  background-color: white;
+}
+ 
+ body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif; 
+}
+
+h2 {
+  color: #333;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="file"][name="imagen"] {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+h4 {
+  color: #333;
+  margin: 20px 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.menu {
+  background-color: #333;
+  color: #fff;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #ccc;
+}
+
+#messages{
+  margin-top: 15px;
+  width: 88%;
+  margin-left: 2%;
+  height: 350px;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 5px #333 inset;
+  padding: 5px;
+  background-color: cadetblue;
+}
+
+#message{
+  width: 87%;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 2%;
+  background-color: white;
+  display: inline-block;
+  margin-top: 5px;
+} 
+
+.message{
+  width: 90%;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: wheat;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* Alinear el contenedor en la misma línea */
+.header {
+  width: 89%;
+  display: flex;
+  justify-content: space-between; /* Empuja el enlace a la derecha */
+  padding-left: 2%;
+  align-items: center; /* Centra el enlace verticalmente */
+}
+
+/* Estilos para el enlace, para que parezca un botón */
+.change-password-btn {
+  padding: 8px 16px;
+  background-color: cadetblue; /* Color azul tipo botón */
+  color: white; /* Texto en blanco */
+  text-decoration: none; /* Quita el subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.change-password-btn:hover {
+  background-color: #007bff; /* Cambia el color al pasar el mouse */
+}

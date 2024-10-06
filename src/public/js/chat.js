@@ -30,12 +30,24 @@ fetch("/api/sessions/current")
     });
     inputMessage.addEventListener("keyup", (e) => {
       e.preventDefault();
-      if (e.code === "Enter" && e.target.value.trim().length > 0) {
+      if ((e.code === "Enter" | e.key === "Enter") && e.target.value.trim().length > 0) {
         socket.emit("message", chatName, e.target.value.trim());
         e.target.value = "";
         e.target.focus();
       }
     });
+
+    const sendMessageButton = document.querySelector(".send-message-button");
+
+    sendMessageButton.addEventListener("click", () => {
+      if (inputMessage.value.trim().length > 0) {
+        socket.emit("message", chatName, inputMessage.value.trim());
+        inputMessage.value = "";
+        inputMessage.focus();
+      }
+    });
+
+
     socket.on("newMessage", (chatName, message) => {
       divMessages.innerHTML += `<span class="message"><p><strong>${chatName}</strong> says <i>${message}</i></p></span>`;
       divMessages.scrollTop = divMessages.scrollHeight;

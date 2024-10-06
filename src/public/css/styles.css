@@ -129,7 +129,7 @@ ul li {
 }
 
 #message{
-  width: 87%;
+  width: 84%;
   border: 1px solid #555;
   border-radius: 5px;
   padding: 5px;
@@ -171,4 +171,13 @@ ul li {
 
 .change-password-btn:hover {
   background-color: #007bff; /* Cambia el color al pasar el mouse */
+}
+
+.send-message-button {
+  background-color: cadetblue;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
 }
